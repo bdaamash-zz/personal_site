@@ -1,0 +1,52 @@
+.skill_bar {
+  height: 30px;
+  background: #d1cfcf;
+  position: relative;
+  margin-bottom: 20px; }
+  .skill_bar > span {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fcb941;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 700; }
+
+.small_skill_bar {
+  height: 30px;
+  background: #fcb941;
+  position: relative;
+  margin-right: 10px;
+  float: left;
+  width: auto; }
+  .small_skill_bar > span {
+    display: block;
+    width: 40px;
+    height: 100%;
+    float: left;
+    position: relative;
+    background: #2c82c9;
+    color: #fff;
+    padding: 5px; }
+  .small_skill_bar > p {
+    float: left;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.awesome_skill_bar {
+  height: 50px;
+  background: #d1cfcf;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center; }
+  .awesome_skill_bar > span {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fcb941;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 700; }

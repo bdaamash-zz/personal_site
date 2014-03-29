@@ -1,0 +1,66 @@
+$background : #d1cfcf;
+$bar_color : #fcb941;
+$blue_bar_color: #2c82c9;
+
+.skill_bar {
+    height:30px;
+    background: $background;
+    position: relative;
+    margin-bottom: 20px;
+    
+    &>span{
+        display: block;
+	    height: 100%;
+        overflow: hidden;
+        position: relative;
+        background: $bar_color;
+        padding-top:5px;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+}
+
+.small_skill_bar {
+    height:30px;
+    background: $bar_color;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+    width: auto;
+    
+    &>span{
+        display: block;
+        width: 40px;
+	    height: 100%;
+        float: left;
+        position: relative;
+        background: $blue_bar_color;
+        color: #fff;
+        padding: 5px;
+    }
+    &>p{
+        float: left;
+        margin:5px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.awesome_skill_bar {
+    height:50px;
+    background: $background;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    &>span{
+        display: block;
+	    height: 100%;
+        overflow: hidden;
+        position: relative;
+        background: $bar_color;
+        padding-top:10px;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+}

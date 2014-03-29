@@ -1,0 +1,101 @@
+.timeline {
+  margin: 0px auto;
+  max-width: 700px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
+  /*thanks to
+     https://twitter.com/JacoKoster
+  */
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
+  background-repeat: repeat-y;
+  background-position: 50% 0; }
+  .timeline *, .timeline *:after, .timeline:after, .timeline *:before, .timeline:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .timeline .year {
+    background: #2c82c9;
+    font-size: 2em;
+    max-width: 5em;
+    clear: both;
+    margin: 1em auto;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    -webkit-box-shadow: inset 0px -5px 0px #23679f;
+    -moz-box-shadow: inset 0px -5px 0px #23679f;
+    box-shadow: inset 0px -5px 0px #23679f; }
+    .timeline .year:first-of-type {
+      margin-top: 0 !important; }
+    .timeline .year + .event {
+      margin-top: -1.5em; }
+  .timeline .event {
+    position: relative;
+    float: right;
+    clear: right;
+    width: 45%;
+    margin: 10px 2.5%;
+    list-style-type: none;
+    display: block;
+    background: white;
+    z-index: 15;
+    color: black;
+    border: 1px solid #999999;
+    text-decoration: none;
+    -webkit-box-shadow: -3px 3px 5px -3px black;
+    -moz-box-shadow: -3px 3px 5px -3px black;
+    box-shadow: -3px 3px 5px -3px black; }
+    .timeline .event.featured {
+      width: 95% !important;
+      margin-bottom: 50px; }
+      .timeline .event.featured:after, .timeline .event.featured:before {
+        display: none; }
+    @media all and (max-width: 600px) {
+      .timeline .event {
+        width: 85%; } }
+    .timeline .event.offset-first {
+      margin-top: -1.5em; }
+    .timeline .event img {
+      max-width: 100%; }
+    .timeline .event h3 {
+      line-height: 13px;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 0px; }
+    .timeline .event p {
+      padding: 5px; }
+    .timeline .event:hover {
+      background: white; }
+    .timeline .event:nth-of-type(even) {
+      float: left;
+      clear: left;
+      -webkit-box-shadow: 3px 3px 5px -3px black;
+      -moz-box-shadow: 3px 3px 5px -3px black;
+      box-shadow: 3px 3px 5px -3px black; }
+      .timeline .event:nth-of-type(even):after {
+        right: -5%;
+        left: auto;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #d1cfcf; }
+    .timeline .event:nth-of-type(odd):after {
+      left: -5%;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #d1cfcf; }
+    @media all and (min-width: 650px) {
+      .timeline .event:after {
+        display: block;
+        content: ' ';
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -5.5%;
+        top: 0.5em; } }
+  .timeline time {
+    display: block;
+    font-weight: bold; }

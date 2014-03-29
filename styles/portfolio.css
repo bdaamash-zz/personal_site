@@ -1,0 +1,26 @@
+.portfolio_list {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-left: 0;
+  width: 100%; }
+  .portfolio_list > li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10xp;
+    width: 150px; }
+  .portfolio_list > li > a {
+    display: block;
+    width: 100%; }
+  .portfolio_list > li > a > img {
+    display: block;
+    border: 5px solid #fc6042;
+    border-radius: 50%;
+    width: 100%; }
+  .portfolio_list > li:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
