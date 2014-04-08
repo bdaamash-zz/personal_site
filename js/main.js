@@ -95,7 +95,7 @@ $(document).ready(function(){
     
     
     // Contact Form Submit
-    var form = $('#contact-me-form');
+    var form = $('#contact-me');
     var formMessages = $('#form-messages');
     
     $(form).submit(function(event) {
