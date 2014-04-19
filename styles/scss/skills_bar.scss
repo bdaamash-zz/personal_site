@@ -17,6 +17,7 @@ $blue_bar_color: #2c82c9;
         padding-top:5px;
         padding-left: 10px;
         font-weight: 700;
+        width: 0;
     }
 }
 
@@ -37,6 +38,7 @@ $blue_bar_color: #2c82c9;
         background: $blue_bar_color;
         color: #fff;
         padding: 5px;
+        
     }
     &>p{
         float: left;
@@ -62,5 +64,6 @@ $blue_bar_color: #2c82c9;
         padding-top:10px;
         padding-left: 10px;
         font-weight: 700;
+        width: 0;
     }
 }

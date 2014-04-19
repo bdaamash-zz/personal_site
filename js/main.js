@@ -9,9 +9,11 @@ $(document).ready(function(){
 
         if (currentScroll > 200) {
             $('nav').fadeIn('slow', function() {
+                setTimeout(
                  $( ".navbar-brand" ).animate({
                     top: "0",
-                  }, '1000', 'swing');
+                  }, '1000', 'swing')
+                ,1000)
 
             });
 
@@ -66,7 +68,7 @@ $(document).ready(function(){
                     }, 1200);
             });
 
-
+           
              $(".awesome_skill_bar > span").each(function() {
                 //force the width to 0, then animate to the percentage in the data-skill-value attribute
                 $(this)
@@ -75,7 +77,11 @@ $(document).ready(function(){
                         width: $(this).data("skill-value")
                     }, 1200);
             });
+            
         }
+        
+       
+    
     }
 
 

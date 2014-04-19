@@ -1,10 +1,15 @@
 <?php
 
     // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_POST['fool']) {
+        
+        if($_POST['fool'] != ''){
+            http_response_code(403);
+            echo "you are a bot!";
+        }
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
@@ -17,8 +22,7 @@
         }
 
         // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "badia.daamash@gmail.com";
+        $recipient = "awesome@bjdaamash.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
