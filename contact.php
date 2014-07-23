@@ -1,7 +1,7 @@
 <?php
 
     // Only process POST reqeusts.
-    if ($_POST['fool']) {
+    if (isset($_POST['fool'])) {
         
         if($_POST['fool'] != ''){
             http_response_code(403);
@@ -25,7 +25,7 @@
         $recipient = "awesome@bjdaamash.com";
 
         // Set the email subject.
-        $subject = "New contact from $name";
+        $subject = "[Personal Site] New contact from $name";
 
         // Build the email content.
         $email_content = "Name: $name\n";
